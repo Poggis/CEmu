@@ -14,6 +14,8 @@
 #include "debugger/hexwidget.h"
 #include "debugger/disasm.h"
 #include "png.h"
+
+#include "../../core/cpu.h"
 #include "../../core/vat.h"
 #include "../../core/debug/debug.h"
 
