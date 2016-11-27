@@ -508,10 +508,11 @@ private:
     void contextMemWidget(const QPoint &posa, uint32_t addr);
 
     // Lua
-    void initLuaThings();
+    void initLuaThings(sol::state &lua, bool isREPL);
     void loadLuaScript();
     void saveLuaScript();
     void runLuaScript();
+    void LuaREPLeval();
 
 #ifdef _WIN32
     // Win32 Console Toggle
@@ -633,6 +634,9 @@ private:
     bool m_timerFpsTriggerable = true;
     bool m_timerEmuTriggered = false;
     bool m_timerFpsTriggered = false;
+
+    sol::state ed_lua;
+    sol::state repl_lua;
 
     static const char *m_varExtensions[];
 
