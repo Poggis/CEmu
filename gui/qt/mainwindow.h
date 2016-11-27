@@ -13,6 +13,7 @@
 #include "keypad/qtkeypadbridge.h"
 #include "debugger/hexwidget.h"
 #include "debugger/disasm.h"
+#include "luaeditor.h"
 #include "png.h"
 
 #include "../../core/cpu.h"
