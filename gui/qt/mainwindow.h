@@ -285,6 +285,7 @@ private:
     void breakSetPrev(QTableWidgetItem *item);
 
     // breakpoint additions
+    void breakToggle(quint32 address, bool gui = true);
     bool breakAdd(const QString &label, uint32_t address, bool enabled, bool toggle);
     void breakAddGui();
     void breakAddSlot();
