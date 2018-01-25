@@ -226,7 +226,8 @@ SOURCES += \
     tivarslib/TypeHandlers/STH_FP.cpp \
     visualizerwidget.cpp \
     debugger/visualizerdisplaywidget.cpp \
-    memorywidget.cpp
+    memorywidget.cpp \
+    debugger/sourceswidget.cpp
 
 linux|macx: SOURCES += ../../core/os/os-linux.c
 win32: SOURCES += ../../core/os/os-win32.c win32-console.cpp
@@ -311,7 +312,8 @@ HEADERS  += \
     tivarslib/TIVarTypes.h \
     tivarslib/TypeHandlers/TypeHandlers.h \
     visualizerwidget.h \
-    debugger/visualizerdisplaywidget.h
+    debugger/visualizerdisplaywidget.h \
+    debugger/sourceswidget.h
 
 FORMS    += \
     mainwindow.ui \
