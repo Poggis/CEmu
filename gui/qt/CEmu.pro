@@ -227,7 +227,8 @@ SOURCES += \
     visualizerwidget.cpp \
     debugger/visualizerdisplaywidget.cpp \
     memorywidget.cpp \
-    debugger/sourceswidget.cpp
+    debugger/sourceswidget.cpp \
+    debugger/cdebughighlighter.cpp
 
 linux|macx: SOURCES += ../../core/os/os-linux.c
 win32: SOURCES += ../../core/os/os-win32.c win32-console.cpp
@@ -313,7 +314,8 @@ HEADERS  += \
     tivarslib/TypeHandlers/TypeHandlers.h \
     visualizerwidget.h \
     debugger/visualizerdisplaywidget.h \
-    debugger/sourceswidget.h
+    debugger/sourceswidget.h \
+    debugger/cdebughighlighter.h
 
 FORMS    += \
     mainwindow.ui \
