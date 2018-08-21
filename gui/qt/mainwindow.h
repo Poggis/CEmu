@@ -269,6 +269,7 @@ private:
     void stepOver();
     void stepNext();
     void stepOut();
+    void runUntil(uint32_t addr);
 
     // os view
     void osUpdate();

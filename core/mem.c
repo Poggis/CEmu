@@ -454,7 +454,7 @@ uint8_t mem_read_cpu(uint32_t addr, bool fetch) {
             if (entry->stack - addr <= 2 + (uint32_t)entry->mode) {
                 entry->popped = true;
             }
-            if (entry->retAddr + entry->range == addr) {
+            if ((uint32_t)entry->retAddr + entry->range == addr) {
                 if (!++entry->range) {
                     --entry->range;
                 }
